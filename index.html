@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<title>Community: Interactive Article</title>
+    
+<link type="text/css" href="css/main.css" rel="stylesheet"/>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/easing/EasePack.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+<script type="text/javascript" src="js/mediaManager.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/communityApp.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+    
+</head>
+
+<body onload="onLoad()">
+    
+    <div id="profile-text" onselectstart="return false"></div>
+    
+    <!-- header for top level navigation and logo -->
+    <div id="header" onselectstart="return false">
+        <div id="header-left" class="header-side">
+            <div id="sections" class="header-button">Sections</div>            
+            <div id="sections-menu">
+                    <div id="menu-item" onclick="menuClick('#family')">Family</div>
+                    <div id="menu-item" onclick="menuClick('#food')">Food</div>
+                    <div id="menu-item" onclick="menuClick('#finance')">Finance</div>
+                    <div id="menu-item" onclick="menuClick('#land')">Land</div>
+                    <div id="menu-item" onclick="menuClick('#conflict')">Conflict</div>
+                    <div id="menu-item" onclick="menuClick('#health-and-education')">Health and Education</div>
+                    <div id="menu-item"onclick="menuClick('#reception')">Reception</div>
+            </div>
+        </div>
+        <div id="header-center"onselectstart="return false"></div>
+        <div id="header-right" onselectstart="return false" class="header-side">
+            <div id="about-us" onselectstart="return false" class="header-button">About Us</div>
+        </div>                
+    </div>
+        
+    <div id="content-wrapper">
+        
+        <!-- canvas is top section -->
+        <canvas id="media-canvas" onselectstart="return false">
+            canvas is not supported in your browser, please upgrade
+        </canvas>
+        
+        <!-- story text goes in bottom section -->
+    
+        <div id="main-text"><br/>
+            
+            <p>Birdsfoot Community is a lot of different things. Depending on who you ask, it's a farm, or a business, or a family-oriented unit. To some, it's all of the above. </p>
+
+            <p>What the seven members (not including animals and livestock) who live on the 73-acre farm all agree on is their commitment to "living simply." </p>
+
+            <p>Co-operative living arrangements-such as communes, eco-villages and intentional communities-are usually built around a commonly shared value.</p>
+
+            <p>Birdsfoot, located in Canton, New York and originally established in 1972, is an intentional community. A community such as Birdsfoot is similar to a commune, but differs in that members have personal and shared resources, assets, and responsibilities. </p>
+
+            <p>A membership agreement developed over time outlines the obligations residents of the farm must fulfill to live there. This includes monthly equity and food dues, community projects, and a commitment to consensus-based decision-making.</p>
+
+            <p>If community members do not fulfill certain obligations, they can be asked to leave the farm. </p>
+
+            <p>Though the agreement doesn't specify why a group of people would come together to live on the land, the seven people have all agreed to try and get by with the simple things. </p>
+
+            <p>To learn more about why each member chose Birdsfoot and what living simply means to them, click the profiles icon above.</p>
+            
+            <!--------------------------------------------------------------------------------------------------------------------------------->
+            
+            <div id="family" class="section-header" name="family">Family</div>
+            
+            <p>Although there is no blood-relation between the seven Birdsfoot members- with the exception of <a onclick="app.media.openPage(2, 'dulli')">Dulli Tengeler</a> and <a onclick="app.media.openPage(2, 'steve')">Steve Molnar's</a> daughter Kyra-they describe themselves as a family unit.</p>
+
+            <p>The group meets every two weeks or so to ensure they are on the same page about issues and plans. </p>
+
+            <p>"There isn't really a hierarchy," <a onclick="app.media.openPage(2, 'christoff')">Christoff Bemis</a> said.</p>
+
+            <p><a onclick="app.media.openPage(2, 'christoff')">Bemis</a>, 29, is the newest member of Birdsfoot. He came to the farm to be with his partner <a onclick="app.media.openPage(2, 'kate')">Kate Fagerlund</a>.</p>
+
+            <p>To become a member of Birdsfoot, there is a three-step process which is conducted by all the other members of the community, according to the group's membership agreement.</p>
+
+            <p>Prospective members are interviewed. After six months as a trial member, their status is reviewed and problems in relation to full membership are discussed.</p>
+
+            <p>After one year of trial membership, a person is either accepted as a full member, trial membership is extended, or the person is asked to leave. </p>
+
+            <p>The document also says children are welcome and Birdsfoot is "committed to help provide basic support for children." This means there are no child living expenses and food money is only proportional to the amount the child eats.</p>
+
+            <p>Currently, Kyra is the only child living on the farm.</p>
+            
+            <!--------------------------------------------------------------------------------------------------------------------------------->
+            
+            <div id="food" class="section-header">Food</div>
+            
+            <p>All members, except children, pay a monthly food expense.</p>
+
+            <p>Most dinners are held in the main house, according to <a onclick="app.media.openPage(2, 'kate')">Fagerlund</a>. She said each member is responsible for feeding the rest of the community approximately once a week.</p>
+
+            <p>Meals held in the <a onclick="app.media.openPage(0, 14)">main house</a> are always vegetarian as a few of the community members have chosen not to eat meat.</p>
+
+            <p>"We have to take other people into account," she said. </p>
+
+            <p>Members houses are equipped with different cooking facilities. For example, <a onclick="app.media.openPage(2, 'christoff')">Bemis</a> and <a onclick="app.media.openPage(2, 'kate')">Fagerlund's</a> house doesn't have a kitchen, but <a onclick="app.media.openPage(2, 'steve')">Molnar</a> and <a onclick="app.media.openPage(2, 'dulli')">Tengeler's</a> house has a stove and oven.</p>
+
+            <p>None of the houses have a refrigerator, rather food is stored in a cellar underneath the main house. </p>
+
+            <p>The farm makes about 25 to 50 per cent of its own food. <a onclick="app.media.openPage(2, 'dulli')">Tengeler's</a> cow provides milk, cheese, and other dairy products to the group and Patreesha has a <a onclick="app.media.openPage(0, 38)">vegetable and herb garden.</a></p>
+
+            <p><a onclick="app.media.openPage(2, 'christoff')">Bemis</a> is responsible for shopping for any other needed groceries, including rice. </p>
+            
+            <!--------------------------------------------------------------------------------------------------------------------------------->
+            
+            <div id="finance" class="section-header">Finance</div>
+            
+            <p>Food isn't the only expense the community shares. Each member contributes a monthly equity and living expense payment.</p>
+
+            <p>Equity payments are different in rent as it is considered a "no interest loan." This means departing members will receive repayment in equal annual instalments for up to 15 years. </p>
+
+            <p>The community also runs its farm as a business. <a onclick="app.media.openPage(2, 'dulli')">Dulli Tengeler</a>, a member since 1991, is in charge of ensuring everything goes smoothly on the business end of things.</p> 
+
+            <p>She said she started farming for money after about one year at Birdsfoot.</p>
+
+            <p>"The second year we ran out of money so I started farming to make a little money and Rob and a friend finished the house," she said. "Since then I've been farming."</p>
+
+            <p>They sell mixed vegetables to both local and retail stores. </p>
+
+            <p>"All our <a onclick="app.media.openPage(0, 4)">vegetables</a> are organic-you know what's in them and on them," she said. </p>
+
+            <p>Birdsfoot members have also agreed to keep all property and assets under ownership of the community living on the farm at any given time. Departing members are asked to sign a "Quit Claim Deed," which relinquishes their ownership of property.</p>
+
+            <p>Though the seven members share some of their income, they also have personal assets.</p>
+
+            <p>For example, <a onclick="app.media.openPage(2, 'dulli')">Tengeler</a> and <a onclick="app.media.openPage(2, 'steve')">Molnar</a> own the school building on the property. </p>
+            
+            <!--------------------------------------------------------------------------------------------------------------------------------->
+            
+            <div id="land" class="section-header">Land</div>
+            
+            <p>Everyone currently living at Birdsfoot lives by and for the land.</p>
+
+            <p>"The land upon which we live is all connected," their membership agreement says. "The earth is our home and our provider.  We derive our physical, emotional and spiritual needs from it."</p>
+
+            <p>The farm has limited electricity, but some of the houses have <a onclick="app.media.openPage(0, 154)">solar panels</a> that heat water and power electronics.</p> 
+
+            <p>Members have agreed to prioritize protecting the land over economic development and therefore there is no disposal-only recycling and reuse. </p>
+            <p>The group celebrates land-based holidays as well. This includes the seasonal solstices such as <a onclick="app.media.openPage(0, 94)">May Day</a> which celebrates the spring, according to long-time member <a onclick="app.media.openPage(2, 'patreesha')">Patreesha Endres</a>. </p>
+
+            <p>"Our community is centred on the earth and the land here," she explained. </p>
+
+            <p>The agreement says the group recognizes the land has multiple uses, and have divided the farm into different zones: agricultural, building, parking, recreational, recycling, sacred areas, woodlots, and wild areas.</p>
+
+            <p>Any time a zone is designated for a particular use, it must be done by consensus of the community membership. </p>
+
+            <p>"We commit ourselves to finding long term, rather than short term solutions to our needs.  In this way we can better honor the generations to come," the agreement says.</p>
+            
+            <!--------------------------------------------------------------------------------------------------------------------------------->
+            
+            <div id="conflict" class="section-header">Conflict</div>
+            
+            <p>Everyone in the community agrees one thing that sets them apart is their commitment to nonviolent conflict resolution. The agreement all of the members signed says taking care of problems this way "cultivates interpersonal harmony and growth."</p>
+
+            <p>This means when there is a conflict, parties can peacefully settle the conflict between themselves, they may bring the conflict before the whole community to decide by consensus, or by an arbitration committee or arbitration professional. </p>
+
+            <p><a onclick="app.media.openPage(2, 'dulli')">Tengeler</a>, who specializes in farming, says some conflict is to be expected. </p>
+
+            <p>"It's part of living together, having differences," she said. </p>
+
+            <p>One example she gave is the Internet. Originally, there was some opposition to having it.</p> 
+
+            <p>But members on the farm say there is seldom much to argue about.</p>
+
+            <p>"We all take care of each other," <a onclick="app.media.openPage(2, 'dulli')">Tengeler</a> said. "It's a very stable situation for us. We share the kids. We share the responsibilities. We share the food."</p>
+
+            <p>In the event all the members decide the Birdsfoot Community should be dissolved, the buyer of the farm must also be approved by consensus. </p>
+
+            <p>"We will try to find a buyer who will commit to being stewards of the land in the spirit of Birdsfoot Community," the agreement says. </p>
+            
+            <!--------------------------------------------------------------------------------------------------------------------------------->
+            
+            <div id="health-and-education" class="section-header">Health and Education</div>
+            
+            <p>Though there are only seven members living on the farm, the group says all of their health and education needs are being met.</p>
+
+            <p>A <a onclick="app.media.openPage(0, 22)">school</a> is located on Birdsfoot Farm. </p>
+
+            <p><a onclick="app.media.openPage(2, 'steve')">Molnar</a> is the head teacher of the school. </p>
+
+            <p>What started with a portable classroom with four kids has evolved into Little River School, which serves 30-40 children annually.</p>
+
+            <p>Molnar says the school doesn't follow a set curriculum, each student instead has a personalized lesson plan. </p>
+
+            <p>"We ask, 'what do you want to learn this year?'" <a onclick="app.media.openPage(2, 'steve')">Molnar</a> said. "Some will say, 'I want to learn reading. I want to learn math.' Others will say 'I want to learn how to build a birdhouse.'"</p>
+
+            <p>He says this is what differentiates Little River School from other schools.</p>
+
+            <p>"Some kids may never have been given a choice of what to do," he said. </p>
+
+            <p>Molnar says-as opposed to public schools-there is a much smaller teacher to student ratio and kids can make more decisions from themselves. </p>
+
+            <p>"Kids are pretty empowered and pretty excited to be here," he said. "It's something really different."</p>
+
+            <p>Because the school teaches all ages, from kindergarten to graduation, Molnar says it's not for everyone. </p>
+
+            <p>"If you hate young children, you wouldn't want to be here," he said.</p>
+
+            <p>But for the kids that currently attend the school, <a onclick="app.media.openPage(2, 'steve')">Molnar</a> says this isn't a problem.</p>
+
+            <p>"Everyone's pretty tight and pretty aware of what's going on in the other age groups," he said. </p>
+
+            <p>The ownership of the school building differs from all other buildings on the commonly-owned property in that <a onclick="app.media.openPage(2, 'steve')">Molnar</a> and <a onclick="app.media.openPage(2, 'dulli')">Tengeler</a> own it independently of the other members. </p>
+
+            <p>This means they are also financially responsible for the building and its maintenance.</p>
+
+            <p>In terms of health needs, members say they have had to seek medical attention off the farm.</p>
+
+            <p>For minor injuries and ailments, <a onclick="app.media.openPage(2, 'kate')">Fagurland</a> is a working nurse and <a onclick="app.media.openPage(2, 'patreesha')">Endres</a> has an herb garden. She focuses on remedies and nutritives.</p>
+            
+            <!--------------------------------------------------------------------------------------------------------------------------------->
+            
+            <div id="reception" class="section-header">Reception</div>
+            
+            <p>Those living on Birdsfoot farm are the first to admit they live a little differently than most people.</p>
+
+            <p>Long-time member <a onclick="app.media.openPage(2, 'patreesha')">Patreesha Endres</a> has been on the farm since the 1980s and says though things could be "wild and crazy" in the beginning, the community has done a lot of good work over the years.</p>
+
+            <p>"The larger community has definitely been affected," she said.</p>
+
+            <p>Even border security knew who they were on first mention.</p>
+
+            <p>"Oh yeah, the cops know who we are," <a onclick="app.media.openPage(2, 'patreesha')">Endres</a> said.</p>
+
+            <p>Lisa Lenenvy, produce buyer of local food shop Nature's Storehouse, says the farm has been integral to their business. She says the community is their longest standing vegetable provider.</p>
+
+            <p>Nature's Storehouse buys everything from mixed greens to parsnips to garlic to sunchokes from the farm. </p>
+
+            <p>Lenenvy says they choose to buy from Birdsfoot because they want to keep money local. </p>
+
+            <p>"One of our main missions is to support local growers," she said.</p>
+            <p>Lenenvy is aware Birdsfoot is an intentional community and says it doesn't come into play in her produce purchasing.</p>
+
+            <p>"When their products are good, I support them," she said. </p>
+
+            <p>She says she likes knowing the vegetables are organic and pesticide-free.  </p>
+
+            <p>Generally, Canton's reception of the community is good, according to Lenenvy. She says they have been integral part of the larger area. </p>
+
+            <p>"Birdsfoot has always been there for us," she said. "These two places have been hand in hand for a long time."</p>
+
+            <p>"Most people know who they are," she said, adding they are often at the farmer's market. "They've cast their net pretty wide."</p>        
+            
+            <img id="footer" src="content/Footer.png"/>
+        </div>
+        
+    </div>
+    
+    
+
+    <div id="hidden-images" style="display:none;">
+        <img id="title-image" src="content/images/birdsfoot-barn.jpg"/>
+        
+        <!-- background images for section headers -->
+        <img id="family-background" src="content/images/headers/family.jpg"/>
+        <img id="food-background" src="content/images/headers/food.jpg"/>        
+        <img id="finance-background" src="content/images/headers/finance.jpg"/>
+        <img id="land-background" src="content/images/headers/land.jpg"/>
+        <img id="conflict-background" src="content/images/headers/conflict.jpg"/>
+        <img id="health-and-education-background" src="content/images/headers/health-and-education.jpg"/>        
+        <img id="reception-background" src="content/images/headers/reception.jpg"/>
+        
+		<img id="map-image" src="content/images/Map-Final.png"/>
+		<img id="video-play" src="content/video-play.png"/>
+		<img id="loading-image" src="content/LogoSprite.png"/>
+		<img id="icon-map" src="content/images/icon/Map-Icon-Drop.png"/>
+		<img id="icon-profiles" src="content/images/icon/Profile-Icon-Drop.png"/>
+		<img id="icon-gallery" src="content/images/icon/Gallery-Icon-Drop.png"/>
+        
+        <audio autoplay="true" loop="true" preload="auto" src="content/ambient.mp3"/>
+        <audio id="rob-sing" loop="false" preload="none" src="content/rob-sing.mp3"/>
+
+    </div>
+</body>
+
+</html>

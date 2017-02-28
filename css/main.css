@@ -1,0 +1,301 @@
+html, body{
+    width:100%;
+    height:100%;
+    border:0px;
+    padding:0px;
+    margin:0px;
+    overflow:hidden;
+    min-height: 500px;
+}
+
+/* canvas profile text*/
+#profile-text{
+    z-index: 1000;
+    display: none;
+    position: absolute;
+    color:white;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #222;
+    padding:5px;
+    font: 18px main-text;
+}
+
+
+/* ----- header ----- */
+
+#header{
+    width:100%;
+    height: 150px;
+    position:relative;
+    z-index:3;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#header-center{
+    width:300px;
+    height:150px;
+    position:absolute;
+    left:calc(50% - 150px);
+    background-image:url("../content/HeaderDrop.png");
+}
+
+#header-left{
+    left:0px;
+}
+
+#header-right{
+    position: absolute;
+    right:0px;
+}
+
+.header-side{
+    width:calc(50% - 150px);
+    height:150px;    
+    position: absolute;
+    background-image:url("../content/HeaderDrop-side.png");
+}
+
+.header-button{
+    height:50px;
+    width:auto;
+    margin:auto;
+    margin-top:40px;
+    text-align: center;
+    font: 30px main-font;
+    color:#222;
+    cursor: pointer;
+}
+
+#sections-menu{
+    background:white;
+    width:300px;
+    z-index: 1000; 
+    margin: auto;
+    font: 30px main-font;
+    display:none;
+    position: relative;
+}
+
+#menu-item{
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#menu-item:hover{
+    background-color: black;
+    color: white;
+}
+
+/* ----- content ----- */
+
+#content-wrapper{
+    width:100%;
+    overflow-x:visible;
+    height:100%;
+    margin:auto;
+    position:relative;
+    
+}
+
+#media-canvas{
+    width:100%;
+    height:50%;
+    background-color:#111;
+    position:relative;
+    top:-25px;
+    z-index:0;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#main-text{
+    height:calc(50% - 50px);
+    top:-25px;
+    overflow-y:hidden;
+    position:relative;
+    z-index:2;
+}
+
+#main-text p{
+	width: 700px;
+	margin: 10px auto 10px auto;
+	font: 20px main-font;
+	font-size: 18px;    
+    line-height: 26px;
+}
+
+#main-text p a{
+    cursor: pointer;
+    color: #358;
+    text-decoration: underline;
+}
+
+/* ----- section headers ----- */
+.section-header{
+    width:calc(100% - 5px);
+    height:80px;
+    padding:220px 0px 0px 5px;
+    font:60px title-font;
+    color:white;
+    text-shadow: 2px 2px black;
+    -webkit-text-shadow: 2px 2px black;
+    -moz-text-shadow: 2px 2px black;
+    background-size:cover;
+    margin:15px 0px 15px 0px;
+}
+
+#family{
+    background-image:url("../content/images/headers/family.jpg");
+}
+
+#food{
+    background-image:url("../content/images/headers/food.jpg");
+}
+
+#finance{
+    background-image:url("../content/images/headers/finance.jpg");
+}
+
+#land{
+    background-image:url("../content/images/headers/land.jpg");
+}
+
+#conflict{
+    background-image:url("../content/images/headers/conflict.jpg");
+}
+
+#health-and-education{
+    background-image:url("../content/images/headers/health-and-education.jpg");
+}
+
+#reception{
+    background-image:url("../content/images/headers/reception.jpg");
+}
+
+/* end section headers */
+
+
+/* ----- about us page -----*/
+
+#aboutus-wrapper{
+    width:80%;
+    margin-left: 10%;
+}
+
+.us-profile{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    float: left;
+    display:
+    text-align: center;
+}
+
+.aboutus-img{
+    width: 200px;
+    height: 200px; 
+    margin: auto;
+}
+
+#aboutus-wrapper p{
+    display: block;
+    width: 350px;
+    padding: 10px 15px 0px 10px;
+    font: 21px main-font;
+    text-align: center;
+    margin: auto;
+}
+
+#blocks{
+    width: 100%;
+    margin:auto;
+}
+
+
+h1{
+    font-family: title-font;
+    font-size: 50px;
+    color: black;
+}
+
+#aboutus-title{
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+}
+
+#kerra{
+background: url("../content/aboutus/profiless-05.png") no-repeat;
+}
+
+#marco{
+background: url("../content/aboutus/profiless-03.png") no-repeat;
+}
+
+#rachel{
+background: url("../content/aboutus/profiless-02.png") no-repeat;
+}
+
+#ryan{
+background: url("../content/aboutus/profiless-04.png") no-repeat;
+}
+
+#zara{
+background: url("../content/aboutus/profiless-01.png") no-repeat;
+}
+
+/*HOVER*/
+#kerra:hover{
+background: url("../content/aboutus/profiless-06.png") no-repeat;
+}
+
+#marco:hover{
+background: url("../content/aboutus/profiless-09.png") no-repeat;
+}
+
+#rachel:hover{
+background: url("../content/aboutus/profiless-08.png") no-repeat;
+}
+
+#ryan:hover{
+background: url("../content/aboutus/profiless-10.png") no-repeat;
+}
+
+#zara:hover{
+background: url("../content/aboutus/profiless-07.png") no-repeat;
+}
+
+#rob-play-pause
+{
+    color: #55F;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#footer{
+    position:relative;
+    left:calc(50% - 500px);
+}
+
+/* end about us page */
+
+/* ----- fonts for use ----- */
+
+@font-face {
+    font-family: title-font;
+    src: url('../fonts/Lobster 1.4.otf');
+}
+
+@font-face {
+    font-family: main-font;
+    src: url('../fonts/Georgia.ttf');
+}
